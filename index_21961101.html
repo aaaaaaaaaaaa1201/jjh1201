@@ -1,0 +1,150 @@
+<!DOCTYPE html> <!--21961101정재희-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>직무수행능력평가2</title>
+
+    <style>
+       *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Poppins', sans-serif;
+       }
+       body{
+         background-color: #B0C4DE;
+         min-height: 100vh;
+       }
+       header{
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         transition: .6s;
+         padding: 40px 100px;
+         z-index: 9999;
+       }
+
+       header.sticky{
+         padding: 5px 100px;
+         background-color: #000;
+       }
+
+       header .logo{
+         position: relative;
+         font-weight: 700;
+         color: #fff;
+         text-decoration: none;
+         font-size: 2em;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+         transition: .6s;
+       }
+       header ul{
+         position: relative;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+       header ul li{
+         position: relative;
+         list-style: none;
+       }
+       header ul li a{
+         position: relative;
+         margin: 0 15px;
+         text-decoration: none;
+         color: #fff;
+         letter-spacing: 5px;
+         font-weight: 500;
+         transition: .6s;
+         font-family: 'Noto Serif KR', serif ;
+       }
+       .banner{
+         position: relative;
+         width: 100%;
+         height: 100vh;
+         background-color: slateblue;
+       }
+       header.sticky .logo, header.sticky ul li a{
+         color:#000;
+       }
+
+       .container{
+       min-height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       }
+       .container a{
+           color: #000;
+           position: relative;
+           width: 300px;
+           height: 75px;
+           margin: 10px 0;
+           font-size: 24px;
+           display: inline-flex;
+           justify-content: center;
+           align-items: center;
+           text-decoration: none;
+           transition: .5s;
+       }
+       .container a:hover{
+           color: #fff;
+       }
+       .container a::before{
+           content: '';
+           position: absolute;
+           top:0;
+           left: 0;
+           width: 0;
+           height: 100%;
+           background: url('btn-bg1.png');
+           background-size: cover;
+           transform-origin: left;
+           transition: .5s;
+       }
+       .container a:nth-child(2):before{
+           background: url('btn-bg2.png');
+           background-size: cover;
+       }
+       .container a:hover::before{
+           width: 100%;
+       }
+       .container a span{
+           position: relative;
+           z-index: 3;
+           font-family: 'Noto Serif KR', serif ;
+       }
+
+     </style>
+
+</head>
+
+
+
+  <body>
+
+    <header>
+       <a href="index_21961101.html" class="logo">Jung jae hui</a>
+       <ul>
+         <li><a href="기획_21961101.html">Planning</a></li>
+         <li><a href="디자인_21961101.html">Design</a></li>
+         <li><a href="퍼블리싱_21961101.html">Web publishing</a></li>
+      </ul>
+     </header>
+
+     <div class="container">
+       <a href="나의소개_21961101.html"><span>
+          포트폴리오를 보기 전에<br>
+          <br>
+         저에 대해서 소개합니다!</span></a>
+
+  </body>
+
+</html>
